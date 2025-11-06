@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trim & Tone Barber Shop</title>
+  <meta name="description" content="Trim & Tone — Professional barbering services. Book haircuts, beard trims, shaves & grooming in [City]." />
+
+  <!-- Link to CSS (create style.css) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicons (optional) -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph / Social meta (optional) -->
+  <meta property="og:title" content="Trim & Tone Barber Shop">
+  <meta property="og:description" content="Professional barbering — Book online.">
+  <meta property="og:image" content="images/og-image.jpg">
+</head>
+<body>
+    <div id="loader">Kobby Trast Barbering Shop Loading...</div>
+
+
+  <!-- SITE HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Kobby TRUST BARBERING Shop">
+        <!-- Replace with svg or image logo -->
+        <img src="images/logo.svg" alt="Kobby TRUST BARBERING shop" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryMenu">Menu</button>
+        <ul id="primaryMenu" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="cta" href="#booking">Book Now</a></li>
+        </ul>
+      </nav>
+
+      <a class="phone-link" href="tel:+2330531124287" aria-label="Call Trim and Tone">+233 0531124287</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <h1>welcome to KOBBY TRUST barbering SHOP</h1>
+        <p class="lead">Professional barbering and grooming in the heart of the city. Walk-ins welcome — book online to skip the queue.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#booking">Book Now</a>
+          <a class="btn btn-outline" href="#services">View Services</a>
+        </div>
+        <ul class="quick-info">
+          <li><strong>Open:</strong> Mon–Sat 9:00 — 18:00</li>
+          <li><strong>Location:</strong> 12 High Street, Accra</li>
+        </ul>
+      </div>
+
+      <div class="hero-image" aria-hidden="true">
+        <!-- Replace with large hero image -->
+        <img src="images/hero-barber.jpg" alt="Barber cutting hair" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+   <section id="services" class="section reveal"> 
+ 
+     <section id="services" class="section services">
+    <div class="container">
+      <header class="section-header">
+        <h2>Services & Pricing</h2>
+        <p>Carefully crafted services for every style — transparent prices, no surprises.</p>
+      </header>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Classic Cut</h3>
+          <p class="desc">Traditional haircut with precision finishing.</p>
+          <div class="price">GHS 30</div>
+        </article>
+
+        <article class="service-card">
+          <h3>Fade & Shape Up</h3>
+          <p class="desc">Modern fades with clean edges.</p>
+          <div class="price">GHS 40</div>
+        </article>
+
+        <article class="service-card">
+          <h3>Beard Trim</h3>
+          <p class="desc">Warm towel, hot lather, neat finish.</p>
+          <div class="price">GHS 25</div>
+        </article>
+
+        <article class="service-card">
+          <h3>Deluxe Shave</h3>
+          <p class="desc">Luxury straight-razor shave + skin treatment.</p>
+          <div class="price">GHS 45</div>
+        </article>
+      </div>
+
+      <div class="services-footer">
+        <a class="btn" href="#booking">Book a Service</a>
+        <a class="btn" href="pricing.html">Full price list</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+   <section id="Gallery" class="section reveal"> 
+  
+
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <header class="section-header">
+        <h2>Gallery — Before & After</h2>
+        <p>Real clients, real results. Swipe on mobile.</p>
+      </header>
+
+      <div class="gallery-grid">
+        <!-- Use real images; add data-full for lightbox in JS -->
+        <figure class="gallery-item">
+          <img src="images/gallery1-thumb.jpg" alt="Before and after haircut 1" data-full="images/gallery1.jpg">
+          <figcaption>Fade transformation</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery2-thumb.jpg" alt="Before and after haircut 2" data-full="images/gallery2.jpg">
+          <figcaption>Classic taper</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery3-thumb.jpg" alt="Before and after haircut 3" data-full="images/gallery3.jpg">
+          <figcaption>Beard sculpt</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery4-thumb.jpg" alt="Before and after haircut 4" data-full="images/gallery4.jpg">
+          <figcaption>Skin fade</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+   <section id="Team" class="section reveal"> 
+    
+
+  <section id="team" class="section team">
+    <div class="container">
+      <header class="section-header">
+        <h2>Meet the Barbers</h2>
+        <p>Skilled professionals who care about every cut.</p>
+      </header>
+
+      <div class="team-grid">
+        <article class="team-member">
+          <img src="images/barber1.jpg" alt="Kwame — Senior Barber">
+          <h3>Kwame</h3>
+          <p class="role">Senior Barber</p>
+          <p class="bio">10+ years experience in fades & grooming. Specialises in classic styles & precision work.</p>
+        </article>
+
+        <article class="team-member">
+          <img src="images/barber2.jpg" alt="Yaw — Barber">
+          <h3>Yaw</h3>
+          <p class="role">Barber</p>
+          <p class="bio">Friendly and detail-oriented, great with kids and modern cuts.</p>
+        </article>
+
+        <article class="team-member">
+          <img src="images/barber3.jpg" alt="Kofi — Apprentice">
+          <h3>Kofi</h3>
+          <p class="role">Apprentice</p>
+          <p class="bio">Learning the craft — offers discounted cuts on weekdays.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS --> 
+   <section id="testimonials" class="section reveal"> 
+    
+  <section class="section testimonials">
+    <div class="container">
+      <header class="section-header">
+        <h2>What clients say</h2>
+      </header>
+
+      <div class="testimonials-slider" aria-live="polite">
+        <blockquote class="testimonial">
+          <p>“Best barber in town — always a great haircut and friendly service.”</p>
+          <cite>— Nana K.</cite>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p>“Quick, clean, and perfect fades every time.”</p>
+          <cite>— Kojo M.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING / CONTACT -->
+<section id="contact" class="section reveal">
+  <div class="container contact-container">
+    <!-- CONTACT INFO + MAP -->
+    <div class="contact-info">
+      <h2>Book or Contact Us</h2>
+      <p>Ready for your next fresh look? Visit us or schedule an appointment below.</p>
+
+      <h3>📍 Location</h3>
+      <p>Kobby Trust Barbering Shop, Abomosu, Eastern Region, Ghana</p>
+
+      <div class="map-wrapper" aria-hidden="false">
+        <iframe
+          src="https://www.google.com/maps?q=Abomosu+Ghana&output=embed"
+          title="Kobby Trust Barbering Shop - Abomosu"
+          width="100%"
+          height="250"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <h3>📞 Call / WhatsApp</h3>
+      <p><a href="tel:+2330531124287">+233 53 311 24287</a></p>
+
+      <h3>🕒 Working Hours</h3>
+      <p>Mon–Sat: 9:00 – 18:00<br>Sun: Closed</p>
+
+      <!-- SOCIAL LINKS -->
+       <div class="social">
+  <h4>Follow & Contact Us</h4>
+  <ul class="social-list" aria-label="Social links">
+    <li>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+        Facebook
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+        Instagram
+      </a>
+    </li>
+    <li>
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" />
+        TikTok
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/2330531124287?text=Hi%20Kobby%20Trust%20Barbering%20Shop!" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+        WhatsApp
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+    <!-- BOOKING FORM -->
+    <form id="booking" class="booking-form" action="#" method="post" novalidate>
+      <h2>Book an Appointment</h2>
+
+      <div class="form-row">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required placeholder="Your full name">
+      </div>
+
+      <div class="form-row">
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" required placeholder="+233XXXXXXXXX">
+      </div>
+
+      <div class="form-row">
+        <label for="service">Service</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option>Classic Cut</option>
+          <option>Fade & Shape Up</option>
+          <option>Beard Trim</option>
+          <option>Deluxe Shave</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="date">Preferred date</label>
+        <input id="date" name="date" type="date" required>
+      </div>
+
+      <div class="form-row">
+        <label for="time">Preferred time</label>
+        <input id="time" name="time" type="time" required>
+      </div>
+
+      <div class="form-row">
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Any preferences?"></textarea>
+      </div>
+
+      <div class="form-row">
+        <button type="submit" class="btn btn-primary">Request Booking</button>
+        <button type="button" id="callButton" class="btn btn-outline">Call Now</button>
+      </div>
+
+      <p class="form-note">We will confirm your booking by phone or WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; 2025 Kobby Trust Barbering Shop | Designed by Herbert</p>
+      </div>
+      <div class="footer-right">
+        <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <!-- Link to JS (create script.js) -->
+  <script src="script.js" defer></script>
+</body>
+</html>
